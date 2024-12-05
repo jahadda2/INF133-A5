@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Tracker</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <header>
+    <h1>Budget Tracker</h1>
+    <p>Track your spending and stay on top of your budget!</p>
+  </header>
+
+  <main>
+    <section id="dashboard">
+      <h2>Dashboard</h2>
+      <p>No data to display yet. Start by setting a budget or logging expenses.</p>
+    </section>
+
+    <section id="budget">
+      <h2>Set Budget</h2>
+      <form id="budget-form">
+        <label>Category:</label>
+        <input type="text" id="category" required>
+        
+        <label>Amount:</label>
+        <input type="number" id="amount" required>
+
+        <button type="submit">Save Budget</button>
+      </form>
+    </section>
+
+    <section id="expenses">
+      <h2>Log Expenses</h2>
+      <form id="expense-form">
+        <label>Category:</label>
+        <input type="text" id="expense-category" required>
+        
+        <label>Amount:</label>
+        <input type="number" id="expense-amount" required>
+        
+        <label>Description:</label>
+        <input type="text" id="description">
+
+        <button type="submit">Add Expense</button>
+      </form>
+    </section>
+
+    <section id="conversions">
+      <h2>Convert Currency</h2>
+      <form id="conversion-form">
+        <label>Select Currency:</label>
+        <select id="currency" required>
+          <option value="USD" selected>United States Dollar</option>
+          <option value="EUR">Euro</option>
+          <option value="GBP">British Pound</option>
+          <option value="CAD">Canadian Dollar</option>
+          <option value="JPY">Japanese Yen</option>
+        </select>
+        <button type="submit">Convert Curency</button>
+        </form>
+    </section>
+  </main>
+<script src="script.js"></script>
+</body>
+</html>
+
